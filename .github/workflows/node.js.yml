@@ -30,4 +30,5 @@ jobs:
     - run: npm install
     - run: npm run test:e2e
       env:
-        environment: e2e_test_env
+        token: ${{ secrets.TFE_TOKEN }}
+        organizationName: 'jwalab-test'
